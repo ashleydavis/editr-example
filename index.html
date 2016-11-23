@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="editr.css">
+
+        <script src="jquery.min.js"></script>
+        <script src="ace.min.js"></script>
+        <script src="ext-emmet.min.js"></script>
+        <script src="libs/ext.emmet.js"></script>
+        <script src="editr.js"></script>
+    </head>
+    <body>
+
+        <div 
+            class="editr" 
+            data-item="example-project" 
+            data-files-html="index-1.html;index-2.html" 
+            data-files-css="!normalize.css;style.css" 
+            data-files-js="!jquery.js;script.js"
+            >
+        </div>
+
+        
+        <script>
+
+            $('.editr').each(function() {
+                new Editr({ el: this });
+            });
+        </script>
+
+    </body>
+</html>
